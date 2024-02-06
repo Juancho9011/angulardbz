@@ -1,0 +1,12 @@
+<div class="container mt-4">
+  <div class="row">
+      <!-- Columna para el formulario -->
+      <div class="col-md-6">
+          <app-dbz-form (onNewPersonaje)="onNewPersonaje($event)"></app-dbz-form>
+      </div>
+      <!-- Columna para la lista -->
+      <div class="col-md-6">
+          <app-dbzlist (onDeletePersonaje)="onDeletePersonaje($event)" [characterList]="ListPersonajes" ></app-dbzlist>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <h1 class="text-center text-danger mb-4">
+    Modificar Personajes de Dragon Ball Z
+  </h1>
+
+  <form class="row" (ngSubmit)="enviarForms()">
+    <div class="form-group mb-3">
+      <label for="nombre">Nombre del personaje:</label>
+      <input
+      [(ngModel)]="personaje.nombre"
+      name="name"
+
+        type="text"
+        class="form-control"
+        id="nombre"
+        name="nombre"
+        placeholder="Nuevo nombre"
+      />
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="poder">Nuevo poder:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="poder"
+        name="poder"
+        placeholder="Nuevo poder"
+
+        [(ngModel)]="personaje.poder"
+        name="name"
+      />
+    </div>
+
+    <!-- <span>{{personaje  | json}}</span> -->
+
+    <button type="submit" class="btn btn-danger">Actualizar</button>
+  </form>
+</div>
